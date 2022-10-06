@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/loading.css">
+</head>
+
+<body>
+    <div class="reset">
+        <div class="loading__container">
+            <div class="loading">
+
+            </div>
+        </div>
+
+    </div>
+    <header class="header">
+        <div class="header__leftitem">
+            <img class="header__sectionlogo" src="images/tools_logo.png">
+        </div>
+
+        <div class="header__rightitem">
+            <p class="header__user loggedUser"></p>
+            <a id="logout" class="header__link">Log out</a>
+            <img class="header__userlogo" src="images/user_icon.png">
+        </div>
+    </header>
+    <main class="report__main">
+        <div class="report_container">
+            Resultados por niveles
+        </div>
+        <div class="report__card">
+            <div class="report__column">
+                <p class="report__title report__text">Empresa:</p><br>
+                <p class="report__content report__text company">...</p>
+            </div>
+            <div class="sepLine"></div>
+            <div class="report__column">
+                <p class="report__title report__text">Contacto:</p><br>
+                <p class="report__content report__text contact">...</p>
+            </div>
+            <div class="sepLine"></div>
+            <div class="report__column">
+                <p class="report__title report__text">Fecha:</p><br>
+                <p class="report__content report__text date">...</p>
+            </div>
+        </div>
+
+
+        <div class="report__card report__card--chart ">
+
+            <div class="title">Principios vs Actividades</div>
+
+            <div class="chart chart--bar">
+                <canvas id="myChart3"></canvas>
+            </div>
+
+            <div class="conv__con">
+
+                <div class="conventions">
+                    <div class="conventions__row">
+                        <div class="conventions__square conventions__square--1">
+
+                        </div>
+                        <div class="conventions__text">
+                            A1 Desarrollo o implementación de tecnologías que impulsan la EC
+                        </div>
+                    </div>
+                    <div class="conventions__row">
+                        <div class="conventions__square conventions__square--2">
+
+                        </div>
+                        <div class="conventions__text">
+                            A2 Desarrollo o implementación de tecnologías que impulsan la EC
+                        </div>
+                    </div>
+                    <div class="conventions__row">
+                        <div class="conventions__square conventions__square--3">
+
+                        </div>
+                        <div class="conventions__text">
+                            A3 Devolver los recursos biológicos recuperados a la biosfera
+                        </div>
+                    </div>
+                    <div class="conventions__row">
+                        <div class="conventions__square conventions__square--4">
+
+                        </div>
+                        <div class="conventions__text">
+                            A4 Energías no convencionales
+                        </div>
+                    </div>
+                    <div class="conventions__row">
+                        <div class="conventions__square conventions__square--5">
+
+                        </div>
+                        <div class="conventions__text">
+                            A5 Alianzas para el desarrollo de la EC con organizaciones y grupos de interés
+                        </div>
+                    </div>
+                    <div class="conventions__row">
+                        <div class="conventions__square conventions__square--6">
+
+                        </div>
+                        <div class="conventions__text">
+                            A6 Remanufacturar productos o componentes
+                        </div>
+                    </div>
+                    <div class="conventions__row">
+                        <div class="conventions__square conventions__square--7">
+
+                        </div>
+                        <div class="conventions__text">
+                            A7 Gestionar(administrar, coordinar, organizar, evaluar) para la mitigación de impacto
+                        </div>
+                    </div>
+                    <div class="conventions__row">
+                        <div class="conventions__square conventions__square--8">
+
+                        </div>
+                        <div class="conventions__text">
+                            A8 Educar a los actores de la cadena e interesados sobre la EC
+                        </div>
+                    </div>
+                    <div class="conventions__row">
+                        <div class="conventions__square conventions__square--9">
+
+                        </div>
+                        <div class="conventions__text">
+                            A9 Diseño para la prolongación de la vida útil (Ecodiseño o DfE)
+                        </div>
+                    </div>
+
+                    <div class="conventions__row">
+                        <div class="conventions__square conventions__square--10">
+
+                        </div>
+                        <div class="conventions__text">
+                            A10 Economía Colaborativa (Productor - Productor, Consumidor - consumidor)
+                        </div>
+                    </div>
+                    <div class="conventions__row">
+                        <div class="conventions__square conventions__square--11">
+
+                        </div>
+                        <div class="conventions__text">
+                            A11 Producto como servicio (PSS)
+                        </div>
+                    </div>
+                    <div class="conventions__row">
+                        <div class="conventions__square conventions__square--12">
+
+                        </div>
+                        <div class="conventions__text">
+                            A12 Recuperación y re circulación de materiales. ( reciclaje de insumos, materias<br> primas y residuos)
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="conventions">
+                    <div class="conventions__row">
+
+                        <div class="conventions__text">
+                            P1 Capital natural
+                        </div>
+                    </div>
+                    <div class="conventions__row">
+
+                        <div class="conventions__text">
+                            P2 Tecnologías para la EC
+                        </div>
+                    </div>
+                    <div class="conventions__row">
+
+                        <div class="conventions__text">
+                            P3 Pensamiento sistémico
+                        </div>
+                    </div>
+                    <div class="conventions__row">
+
+                        <div class="conventions__text">
+                            P4 Pensamiento en cascada
+                        </div>
+                    </div>
+                    <div class="conventions__row">
+
+                        <div class="conventions__text">
+                            P5 Ecoeficiencia (Enfoque en el rendimiento)
+                        </div>
+                    </div>
+                    <div class="conventions__row">
+
+                        <div class="conventions__text">
+                            P6 Innovación
+                        </div>
+                    </div>
+                    <div class="conventions__row">
+
+                        <div class="conventions__text">
+                            P7 Gestión del impacto
+                        </div>
+                    </div>
+                    <div class="conventions__row">
+
+                        <div class="conventions__text">
+                            P8 Optimización de valor
+                        </div>
+                    </div>
+                    <div class="conventions__row">
+
+                        <div class="conventions__text">
+                            P9 Pensamiento local
+                        </div>
+                    </div>
+
+                    <div class="conventions__row">
+
+                        <div class="conventions__text">
+                            P10 Resiliencia para la diversidad
+                        </div>
+                    </div>
+                    <div class="conventions__row">
+
+                        <div class="conventions__text">
+                            P11 Circularidad y longevidad
+                        </div>
+                    </div>
+                    <div class="conventions__row">
+
+                        <div class="conventions__text">
+                            P12 Diseño para prevención de residuos
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+        </div>
+        <a href=" ./company_report.html ">
+            <button class="button form__button form__button--fixed reportGoBackBtn">Volver</button>
+        </a>
+
+    </main>
+
+
+
+</body>
+
+</html>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDaqjYGByp_z0h0Ph_ysOX18j2nflVoSUc",
+        authDomain: "ecpruebaheuristica.firebaseapp.com",
+        databaseURL: "https://ecpruebaheuristica-default-rtdb.firebaseio.com",
+        projectId: "ecpruebaheuristica",
+        storageBucket: "ecpruebaheuristica.appspot.com",
+        messagingSenderId: "8577632675",
+        appId: "1:8577632675:web:cb5a80978d3982b4747216",
+        measurementId: "G-YCPNF4GZRQ"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js " integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+<script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js "></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.js" integrity="sha512-+lwWRCGAWhCLRPruF7ruYxRlMQuRD1H9C/Pc/HYcuxachoLufBO7OU66bfFnVsFaHQj3S/CunEimw8alVvkl+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./js/utils/auth.js "></script>
+<script src="./js/utils/general.js "></script>
+<script src="./js/utils/score.js "></script>
+<script src="./js/utils/filters.js "></script>
+
+<script src="./js/report.js"></script>
+<script src="./js/utils/matrixMaths.js "></script>
+
+<script src="./js/utils/stackedBarChart.js"></script>

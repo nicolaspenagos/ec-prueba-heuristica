@@ -1,0 +1,34 @@
+    .downloadHojaDeRuta {
+        &__container {
+            margin-right: auto;
+        }
+        &__main {
+            height: auto;
+            padding-top: 50px;
+            padding-left: 120px;
+            justify-content: left;
+            min-height: 800px;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 50px;
+        }
+        &__imagen {
+            //width: 100%;
+            margin-right: 120px;
+            border-radius: 15px;
+        }
+        &__icon {
+            width: 55px;
+            &--nopressed {
+                opacity: 0.5;
+            }
+        }
+        &__menu {
+            display: flex;
+            flex-direction: row;
+            margin-top: 20px;
+            justify-content: space-between;
+            margin-right: 120px;
+            margin-bottom: 50px;
+        }
+    }

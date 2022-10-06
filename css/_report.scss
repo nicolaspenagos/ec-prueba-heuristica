@@ -1,0 +1,278 @@
+    .qrcode {
+        margin-left: 120px;
+        margin-bottom: 40px;
+    }
+    
+    .copyLink {
+        margin-right: 15px;
+    }
+    
+    .report {
+        &__finalBtns {
+            margin-left: 120px;
+            &__cont {
+                display: flex;
+                flex-direction: row;
+            }
+            &__txt {
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-left: 10px;
+            }
+        }
+        &__actSugestion {
+            display: flex;
+            flex-direction: row;
+            margin-right: auto;
+            margin-bottom: 10px;
+            margin-left: 15px;
+            &--des {
+                margin-left: 45px;
+                margin-right: auto;
+                margin-top: 0px;
+                color: #808080;
+                margin-bottom: 15px;
+            }
+            &__sep {
+                width: 4px;
+                margin-left: 3px;
+                margin-right: 3px;
+                border-radius: 3px;
+                &--sp {
+                    margin-left: 12px;
+                }
+                &--a1 {
+                    background-color: $a1;
+                }
+                &--a2 {
+                    background-color: $a2;
+                }
+                &--a3 {
+                    background-color: $a3;
+                }
+                &--a4 {
+                    background-color: $a4;
+                }
+                &--a5 {
+                    background-color: $a5;
+                }
+                &--a6 {
+                    background-color: $a6;
+                }
+                &--a7 {
+                    background-color: $a7;
+                }
+                &--a8 {
+                    background-color: $a8;
+                }
+                &--a9 {
+                    background-color: $a9;
+                }
+                &--a10 {
+                    background-color: $a10;
+                }
+                &--a11 {
+                    background-color: $a11;
+                }
+                &--a12 {
+                    background-color: $a12;
+                }
+            }
+        }
+        &_container {
+            margin-top: 40px;
+            margin-bottom: 30px;
+            margin-left: 120px;
+            margin-right: 120px;
+            height: 100px;
+            font-size: 40px;
+            font-weight: 900;
+            line-height: 100px;
+            color: #646464;
+        }
+        &__main {
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            float: none
+        }
+        &__card {
+            margin-left: 120px;
+            margin-right: 120px;
+            width: auto;
+            height: 70px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding-left: 15px;
+            padding-right: 15px;
+            box-shadow: 0px 0px 7px rgb(230, 230, 230);
+            &--title {
+                width: 400px;
+                height: 40px;
+                font-weight: 900;
+            }
+            &--table {
+                height: auto;
+                font-size: small;
+                padding: 15px;
+            }
+            &--chart {
+                padding: 50px;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        &__text {
+            line-height: 0;
+        }
+        &__content {
+            font-size: 20px;
+            font-weight: 900px;
+        }
+        &__title {
+            color: #646464;
+        }
+    }
+    
+    .chart {
+        margin-top: 30px;
+        width: 50%;
+        margin-bottom: 30px;
+        &--bar {
+            width: 100%;
+        }
+    }
+    
+    .sepLine {
+        height: 50px;
+        width: 2px;
+        background-color: #808080;
+    }
+    
+    .table {
+        width: 90%;
+    }
+    
+    .title {
+        font-size: 30px;
+        font-weight: 900;
+    }
+    
+    .reportGoBackBtn {
+        margin-bottom: 40px;
+        margin-left: 120px;
+    }
+    
+    .macrosector {
+        margin-left: 40px;
+        margin-right: 40px;
+        height: 45px;
+        width: 320px;
+        margin-bottom: 15px;
+    }
+    
+    .conventions {
+        margin-top: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        &__row {
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+        }
+        &__square {
+            height: 15px;
+            width: 15px;
+            &--1 {
+                background-color: #FF849D;
+            }
+            &--2 {
+                background-color: #FFB26A;
+            }
+            &--3 {
+                background-color: #75CDCD;
+            }
+            &--4 {
+                background-color: #F7D77D;
+            }
+            &--5 {
+                background-color: #75CDCD;
+            }
+            &--6 {
+                background-color: #61B6EF;
+            }
+            &--7 {
+                background-color: #AE89FF;
+            }
+            &--8 {
+                background-color: #D4D6DA;
+            }
+            &--9 {
+                background-color: #99FF5B;
+            }
+            &--10 {
+                background-color: #C05357;
+            }
+            &--11 {
+                background-color: #F19DF2;
+            }
+            &--12 {
+                background-color: #509B9B;
+            }
+            &--13 {
+                background-color: rgb(239, 158, 146);
+            }
+        }
+        &__text {
+            line-height: 15px;
+            margin-left: 5px;
+        }
+    }
+    
+    .barTitle {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .totalBar {
+        border-radius: 5px;
+        background-color: #D4D6DA;
+        margin-left: 0px;
+        margin-right: 0px;
+        height: 20px;
+        &__text {
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: row;
+            color: #808080;
+            font-size: small;
+            justify-content: space-between;
+        }
+    }
+    
+    .innerBar {
+        border-radius: 5px;
+        background-color: rgb(64, 147, 198);
+        height: 20px;
+        width: 0%;
+        margin-right: auto;
+    }
+    
+    @media(max-width: 600px) {
+        .report {
+            &__container {
+                margin-left: 0;
+                margin-right: 0;
+            }
+            &__card {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    }

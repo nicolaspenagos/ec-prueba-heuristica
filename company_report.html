@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__leftitem">
+            <img class="header__sectionlogo" src="images/tools_logo.png">
+        </div>
+
+        <div class="header__rightitem">
+            <p class="header__user loggedUser"></p>
+            <a id="logout" class="header__link">Log out</a>
+            <img class="header__userlogo" src="images/user_icon.png">
+        </div>
+    </header>
+    <main class="report__main">
+        <div class="report_container">
+            Informe de la empresa
+        </div>
+        <div class="menuCard menuCard__company byLevelsBtn">
+            <img src="./images/information.png" class="menuImage">
+            <h1>RESULTADOS POR NIVELES</h1>
+
+
+        </div>
+        <div class="menuCard menuCard__company byPrinciplesVsActivities">
+            <img src="./images/barras.png" class="menuImage ">
+            <h1>RESULTADOS POR PRINCIPIOS Y ACTIVIDADES</h1>
+
+        </div>
+
+        <div class="menuCard menuCard__company downloadRoute">
+            <img src="./images/balance-sheet.png" class="menuImage ">
+            <h1>HOJA DE RUTA</h1>
+
+        </div>
+
+        <div class="menuCard menuCard__company repuni pressed noHover">
+            <img src="./images/repuni.png" class="menuImage ">
+            <h1>REPORTE UNIFICADO</h1>
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <a href=" ./tool-menu.html ">
+            <button class="button form__button form__button--fixed reportGoBackBtn">Volver</button>
+        </a>
+
+    </main>
+
+
+
+</body>
+
+</html>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDaqjYGByp_z0h0Ph_ysOX18j2nflVoSUc",
+        authDomain: "ecpruebaheuristica.firebaseapp.com",
+        databaseURL: "https://ecpruebaheuristica-default-rtdb.firebaseio.com",
+        projectId: "ecpruebaheuristica",
+        storageBucket: "ecpruebaheuristica.appspot.com",
+        messagingSenderId: "8577632675",
+        appId: "1:8577632675:web:cb5a80978d3982b4747216",
+        measurementId: "G-YCPNF4GZRQ"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+<script src="js/utils/auth.js"></script>
+<script src="js/companyReport.js"></script>

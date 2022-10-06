@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/loading.css">
+</head>
+
+<body class="" style="background-color: #EFF2F5;">
+    <div class="reset">
+        <div class="loading__container">
+            <div class="loading">
+
+            </div>
+        </div>
+
+    </div>
+    <header class="header pdf">
+        <div class="header__leftitem">
+            <img class="header__sectionlogo" src="images/tools_logo.png">
+        </div>
+
+        <div class="header__rightitem">
+            <p class="header__user loggedUser"></p>
+            <a id="logout" class="header__link">Log out</a>
+            <img class="header__userlogo" src="images/user_icon.png">
+        </div>
+    </header>
+    <main class="report__main">
+        <div class="report_container">
+            Resultados por niveles
+        </div>
+        <div class="report__card">
+            <div class="report__column">
+                <p class="report__title report__text">Empresa:</p><br>
+                <p class="report__content report__text company">...</p>
+            </div>
+            <div class="sepLine"></div>
+            <div class="report__column">
+                <p class="report__title report__text">Contacto:</p><br>
+                <p class="report__content report__text contact">...</p>
+            </div>
+            <div class="sepLine"></div>
+            <div class="report__column">
+                <p class="report__title report__text">Fecha:</p><br>
+                <p class="report__content report__text date">...</p>
+            </div>
+        </div>
+
+
+        <div class="report__card report__card--chart">
+
+
+            <div class="title" style="margin-left: 0px; margin-top: 0px;">Nivel cadena</div>
+            <div class="chart">
+                <canvas id="myChart"></canvas>
+            </div>
+
+            <div class="title" style="margin-left: 0px; margin-top: 0px;">Nivel empresa</div>
+            <div class="chart">
+                <canvas id="myChart1"></canvas>
+            </div>
+            <div class="title" style="margin-left: 0px; margin-top: 0px;">Nivel producto</div>
+            <div class="chart">
+                <canvas id="myChart2"></canvas>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+
+    </main>
+    <a href=" ./company_report.html ">
+        <button class="button form__button form__button--fixed reportGoBackBtn">Volver</button>
+    </a>
+    <button class="button downloadButton">Descargar</button>
+
+
+
+</body>
+
+</html>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDaqjYGByp_z0h0Ph_ysOX18j2nflVoSUc",
+        authDomain: "ecpruebaheuristica.firebaseapp.com",
+        databaseURL: "https://ecpruebaheuristica-default-rtdb.firebaseio.com",
+        projectId: "ecpruebaheuristica",
+        storageBucket: "ecpruebaheuristica.appspot.com",
+        messagingSenderId: "8577632675",
+        appId: "1:8577632675:web:cb5a80978d3982b4747216",
+        measurementId: "G-YCPNF4GZRQ"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+
+
+<script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js " integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+<script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js "></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.js" integrity="sha512-+lwWRCGAWhCLRPruF7ruYxRlMQuRD1H9C/Pc/HYcuxachoLufBO7OU66bfFnVsFaHQj3S/CunEimw8alVvkl+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./js/utils/auth.js "></script>
+<script src="./js/utils/general.js "></script>
+<script src="./js/utils/score.js "></script>
+<script src="./js/utils/filters.js "></script>
+<script src="./js/report.js"></script>
+<script src="./js/utils/matrixMaths.js "></script>
+<script src='/js/utils/polarMain.js'></script>
+<script src="/js/utils/polarReportPDF.js"></script>

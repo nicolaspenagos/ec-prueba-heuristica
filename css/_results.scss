@@ -1,0 +1,53 @@
+.results {
+    &__container {
+        width: 100% !important;
+        height: auto;
+        background-color: rgb(245, 245, 245);
+        display: table;
+        border-collapse: separate;
+        box-sizing: border-box;
+        text-indent: initial;
+        border-spacing: 2px;
+        border-color: grey;
+        display: table;
+    }
+    &__button {
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+}
+
+.row {
+    &--results {
+        border-top: solid black 1px;
+        border-bottom: solid black 1px;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: left;
+    }
+    &--noTop {
+        border-top: 0px;
+    }
+}
+
+.table {
+    &__row {
+        background-color: rgb(245, 245, 245);
+        stroke: none;
+    }
+    &__number {
+        margin-left: 10px;
+    }
+}
+
+td {
+    stroke: none;
+}
+
+.conv {
+    &__con {
+        display: flex;
+        flex-direction: row;
+    }
+}
